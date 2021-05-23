@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+  font-family: debugFont;
+  src: url('src/assets/fonts/debug-free.woff');
+}
+
+body {
+  text-align: center;
+  background-image: url("src/assets/images/simple-bg.jpg");
+  background-size: cover;
+}

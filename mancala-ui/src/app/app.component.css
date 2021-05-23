@@ -1,0 +1,24 @@
+#gameTitle {
+  text-align: center;
+  color: white;
+  font-family: debugFont, sans-serif;
+  font-size: 6em;
+  -webkit-text-stroke: 2px black;
+}
+
+#gameFooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  background-color: #5cb85c;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

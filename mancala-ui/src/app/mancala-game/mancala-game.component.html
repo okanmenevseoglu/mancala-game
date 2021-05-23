@@ -1,0 +1,70 @@
+<button (click)="doGetNewGame()" class="btn">New Game</button>
+<br>
+<br>
+
+<div *ngIf="boardStatusResponse" class="alert">
+  <h3 *ngIf="boardStatusResponse?.infoMessage"><strong>Info:</strong> {{boardStatusResponse.infoMessage}}</h3>
+  <h3 *ngIf="boardStatusResponse?.currentPlayer"><strong>Next Player:</strong> {{boardStatusResponse?.currentPlayer}}
+  </h3>
+</div>
+
+<div *ngIf="boardStatusResponse?.pits" class="center" id="gameBoard">
+  <h3>P2 Pits</h3>
+  <table>
+    <tr>
+      <td class="pit" id="playerTwoHomePit">
+        P2 Home: {{boardStatusResponse?.pits[13].stones}}
+      </td>
+
+      <td id="playerPits">
+        <table>
+          <tr>
+            <td (click)="doSow(12)" class="pit">
+              {{boardStatusResponse?.pits[12].stones}}
+            </td>
+            <td (click)="doSow(11)" class="pit">
+              {{boardStatusResponse?.pits[11].stones}}
+            </td>
+            <td (click)="doSow(10)" class="pit">
+              {{boardStatusResponse?.pits[10].stones}}
+            </td>
+            <td (click)="doSow(9)" class="pit">
+              {{boardStatusResponse?.pits[9].stones}}
+            </td>
+            <td (click)="doSow(8)" class="pit">
+              {{boardStatusResponse?.pits[8].stones}}
+            </td>
+            <td (click)="doSow(7)" class="pit">
+              {{boardStatusResponse?.pits[7].stones}}
+            </td>
+          </tr>
+          <tr>
+            <td (click)="doSow(0)" class="pit">
+              {{boardStatusResponse?.pits[0].stones}}
+            </td>
+            <td (click)="doSow(1)" class="pit">
+              {{boardStatusResponse?.pits[1].stones}}
+            </td>
+            <td (click)="doSow(2)" class="pit">
+              {{boardStatusResponse?.pits[2].stones}}
+            </td>
+            <td (click)="doSow(3)" class="pit">
+              {{boardStatusResponse?.pits[3].stones}}
+            </td>
+            <td (click)="doSow(4)" class="pit">
+              {{boardStatusResponse?.pits[4].stones}}
+            </td>
+            <td (click)="doSow(5)" class="pit">
+              {{boardStatusResponse?.pits[5].stones}}
+            </td>
+          </tr>
+        </table>
+      </td>
+
+      <td class="pit" id="playerOneHomePit">
+        P1 Home: {{boardStatusResponse?.pits[6].stones}}
+      </td>
+    </tr>
+  </table>
+  <h3>P1 Pits</h3>
+</div>
