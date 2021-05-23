@@ -1,0 +1,11 @@
+# Maven config
+.mvn
+
+# Compiled target folder
+target
+
+# IntelliJ
+mvnw*
+
+# Module file
+*.iml

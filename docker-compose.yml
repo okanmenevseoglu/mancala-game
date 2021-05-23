@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  mancala-api:
+    build: ./mancala-game-api
+    ports:
+      - "8082:8082"
+    image: okanmenevseoglu.github.io/mancala-game:1.0.0
+  mancala-ui:
+    build: mancala-ui
+    ports:
+      - "4200:80"
+    image: okanmenevseoglu.github.io/mancala-ui:1.0.0
