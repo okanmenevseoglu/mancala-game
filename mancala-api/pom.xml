@@ -11,7 +11,7 @@
     <groupId>io.github.okanmenevseoglu</groupId>
     <artifactId>mancala-api</artifactId>
     <version>1.0.0</version>
-    <name>mancala-game-api</name>
+    <name>mancala-api</name>
     <description>This is a recreation of a game called Mancala with Java/Spring Boot.</description>
     <properties>
         <java.version>15</java.version>

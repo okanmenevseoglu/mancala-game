@@ -8,7 +8,7 @@ COPY . /app
 
 RUN mvn clean install
 
-ENTRYPOINT ["java","-jar","target/mancala-game-api-1.0.0.jar"]
+ENTRYPOINT ["java","-jar","target/mancala-api-1.0.0.jar"]
 
 EXPOSE 8082
 

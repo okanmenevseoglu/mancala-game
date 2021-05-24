@@ -77,7 +77,7 @@ Alternatively,
 
 The backend of the project is a Java 15/Spring Boot/Maven project. To be able to start it you should install at least
 Java 15 and Maven 3.8.1. After the installation run the following command
-under ```{PROJECT_ROOT_DIR}/mancala-game-api```:
+under ```{PROJECT_ROOT_DIR}/mancala-api```:
 
 * ```mvn clean install spring-boot:run```
 
@@ -88,7 +88,7 @@ to run all tests and start the application on the ```localhost:8082```.
 ### Running the Frontend Locally (Optional)
 
 The frontend of the project is an Angular project. To be able to run it you should install Node 14 or later along with
-NPM. After the installation run the following command under ```{PROJECT_ROOT_DIR}/mancala-game-ui```:
+NPM. After the installation run the following command under ```{PROJECT_ROOT_DIR}/mancala-ui```:
 
 * ```ng serve```
 

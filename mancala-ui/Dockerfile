@@ -14,6 +14,6 @@ RUN npm run build --prod
 # Stage 2 - Running the project
 FROM nginx:1.19.10-alpine
 
-COPY --from=build-step /app/dist/mancala-game-ui /usr/share/nginx/html
+COPY --from=build-step /app/dist/mancala-ui /usr/share/nginx/html
 
 EXPOSE 80

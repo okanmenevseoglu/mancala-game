@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'mancala-game-ui'`, () => {
+  it(`should have as title 'mancala-ui'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('mancala-game-ui');
+    expect(app.title).toEqual('mancala-ui');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('mancala-game-ui app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('mancala-ui app is running!');
   });
 });
