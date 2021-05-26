@@ -4,6 +4,8 @@ This is a recreation of a game called Mancala with Java/Spring Boot and Angular.
 
 To read more about the game, visit https://en.wikipedia.org/wiki/Mancala.
 
+![Game UI](screenshot.png)
+
 ## 1. Game Rules
 
 The PDF version of the rules can be found under:
