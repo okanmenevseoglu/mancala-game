@@ -69,7 +69,7 @@ following can be run under ```{PROJECT_ROOT_DIR}```:
 
 Alternatively,
 
-* ```docker-compos up -d``` to start
+* ```docker-compose up -d``` to start
 
 * ```docker-compose down``` to stop the application.
 
